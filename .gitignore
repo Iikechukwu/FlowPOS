@@ -1,0 +1,60 @@
+# ── Python ────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+
+# ── Virtual environments ──────────────────────────────────────────
+venv/
+.venv/
+env/
+.env/
+
+# ── Model weights (large binary files — download separately) ──────
+*.pt
+*.pth
+*.onnx
+*.weights
+*.h5
+
+# ── Database (contains personal biometric data) ───────────────────
+*.db
+*.sqlite
+*.sqlite3
+
+# ── Customer data (biometric & personal — never commit) ───────────
+customers/
+!customers/.gitkeep
+
+# ── Logs & exports ────────────────────────────────────────────────
+*.xlsx
+*.csv
+*.log
+logs/
+
+# ── Backup files ──────────────────────────────────────────────────
+*.backup
+*_backup.*
+_backups/
+
+# ── Environment & secrets ─────────────────────────────────────────
+.env
+.env.*
+*.key
+config_local.py
+
+# ── OS junk ───────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── IDEs ──────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.suo
+*.user

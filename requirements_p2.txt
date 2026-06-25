@@ -1,0 +1,9 @@
+opencv-python
+numpy
+deepface
+tf-keras
+tensorflow
+retina-face
+requests
+Pillow
+tqdm
