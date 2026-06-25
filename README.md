@@ -1,6 +1,6 @@
 # FlowPOS
 
-An AI-powered, checkout-free retail system that uses computer vision to identify customers by face and automatically tracks items they pick up from a shelf — billing them in real time with no manual checkout required.
+An AI-powered(computer vision), checkout-free retail system that uses computer vision to identify customers by face and automatically tracks items they pick up from a shelf — billing them in real time with no manual checkout required.
 
 ---
 
@@ -166,6 +166,9 @@ See `requirements.txt` for the full pinned package list. Key dependencies:
 ## Known Limitations
 
 These are the current boundaries of the system. Understanding them is important before deploying in a real environment.
+
+**The model is overfitting**
+The image detection model was only trained on custom images, more data and preprecessing steps are needed during training, to reduce overfitting.
 
 **Single-person sessions only**
 FlowPOS tracks one active customer at a time. If two people are in frame simultaneously, the system may fire conflicting `CUSTOMER_IDENTIFIED` and `CUSTOMER_LEFT` events, leading to billing errors. Multi-person tracking is the highest-priority improvement for v2.
